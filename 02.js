@@ -1,8 +1,8 @@
-/* 
-  Importante: 
+/*
+  Importante:
   No modificar ni el nombre ni los argumetos que reciben las funciones, sólo deben escribir
-  código dentro de las funciones ya definidas. 
-  No comentar la funcion 
+  código dentro de las funciones ya definidas.
+  No comentar la funcion
 */
 function stringMasLarga(strings) {
   // La función llamada 'stringMasLarga', recibe como argumento un arreglo de strings llamado 'strings'
@@ -12,6 +12,13 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+    let strMasLarga = strings[0]
+    for (let index = 1; index < strings.length; index++) {
+        if (strings[index].length > strMasLarga.length){
+            strMasLarga = strings[index]
+        }
+    }
+        return strMasLarga
 }
 
 // No modifiques nada debajo de esta linea //
